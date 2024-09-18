@@ -1,0 +1,33 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@6.14.18
+3 info using node@v18.19.1
+4 verbose npm-session b72fb178f899f2aa
+5 silly install runPreinstallTopLevelLifecycles
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 timing stage:rollbackFailedOptional Completed in 9ms
+9 timing stage:runTopLevelLifecycles Completed in 2140ms
+10 verbose stack Error: Failed to parse json
+10 verbose stack Unexpected string in JSON at position 675 while parsing '{
+10 verbose stack   "name": "blog_website",
+10 verbose stack   "version":'
+10 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:465:11)
+10 verbose stack     at parseJson (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:100:26)
+10 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:47:5
+10 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:123:16
+10 verbose stack     at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+11 verbose cwd /home/ubuntu/Techdome-frontend
+12 verbose Linux 6.8.0-1012-aws
+13 verbose argv "/usr/bin/node" "/usr/local/bin/npm" "install"
+14 verbose node v18.19.1
+15 verbose npm  v6.14.18
+16 error code EJSONPARSE
+17 error file /home/ubuntu/Techdome-frontend/package.json
+18 error JSON.parse Failed to parse json
+18 error JSON.parse Unexpected string in JSON at position 675 while parsing '{
+18 error JSON.parse   "name": "blog_website",
+18 error JSON.parse   "version":'
+19 error JSON.parse Failed to parse package.json data.
+19 error JSON.parse package.json must be actual JSON, not just JavaScript.
+20 verbose exit [ 1, true ]

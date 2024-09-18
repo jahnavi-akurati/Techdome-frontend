@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@6.14.18
+3 info using node@v18.19.1
+4 verbose npm-session 64a18c0f4df431ef
+5 silly install runPreinstallTopLevelLifecycles
+6 silly preinstall blog_website@0.1.0
+7 info lifecycle blog_website@0.1.0~preinstall: blog_website@0.1.0
+8 silly install loadCurrentTree
+9 silly install readLocalPackageData
+10 timing stage:loadCurrentTree Completed in 2621ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 44ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 229ms
+16 silly install loadAllDepsIntoIdealTree
+17 timing stage:rollbackFailedOptional Completed in 1ms
+18 timing stage:runTopLevelLifecycles Completed in 2984ms
+19 silly saveTree blog_website@0.1.0
+20 verbose stack Error: Invalid tag name "^latest": Tags may not have any characters that encodeURIComponent encodes.
+20 verbose stack     at invalidTagName (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:91:15)
+20 verbose stack     at fromRegistry (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:296:13)
+20 verbose stack     at Function.resolve (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:81:12)
+20 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/deps.js:493:20
+20 verbose stack     at Array.map (<anonymous>)
+20 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/deps.js:492:47
+20 verbose stack     at tryCatcher (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/util.js:16:23)
+20 verbose stack     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:547:31)
+20 verbose stack     at Promise._settlePromise (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:604:18)
+20 verbose stack     at Promise._settlePromiseCtx (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:641:10)
+20 verbose stack     at _drainQueueStep (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:97:12)
+20 verbose stack     at _drainQueue (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:86:9)
+20 verbose stack     at Async._drainQueues (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:102:5)
+20 verbose stack     at Async.drainQueues [as _onImmediate] (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:15:14)
+20 verbose stack     at process.processImmediate (node:internal/timers:476:21)
+21 verbose cwd /home/ubuntu/Techdome-frontend
+22 verbose Linux 6.8.0-1012-aws
+23 verbose argv "/usr/bin/node" "/usr/local/bin/npm" "install"
+24 verbose node v18.19.1
+25 verbose npm  v6.14.18
+26 error code EINVALIDTAGNAME
+27 error Invalid tag name "^latest": Tags may not have any characters that encodeURIComponent encodes.
+28 verbose exit [ 1, true ]
